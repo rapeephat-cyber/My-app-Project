@@ -1,5 +1,7 @@
 <?php
-require __DIR__.'/../includes/bootstrap.php';require __DIR__.'/../includes/repository.php';require __DIR__.'/../includes/geofence_layers.php';
+require_once __DIR__.'/../includes/bootstrap.php';
+require_once __DIR__.'/../includes/repository.php';
+require_once __DIR__.'/../includes/geofence_layers.php';
 permit('geofences.write');check_csrf();$area=input('area_id');
 if($area!==''&&!q("SELECT area_id FROM geofence_areas WHERE area_id=? AND status='active'",[$area])->fetch())abort_page(422,'กรุณาเลือกพื้นที่ที่ใช้งานอยู่');
 $lock=fopen(__DIR__.'/../config/campus-layer.lock','c');

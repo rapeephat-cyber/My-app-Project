@@ -83,7 +83,7 @@ void main() {
   test('OS preserves approved Thai status and date range', () {
     final row = {
       'offsite_request_id': 'OS0001',
-      'department_id': 'D0001',
+      'employee_id': 'E0001',
       'request_date': '2026-09-17 08:00:00',
       'work_date_start': '2026-09-17',
       'work_date_end': '2026-09-19',

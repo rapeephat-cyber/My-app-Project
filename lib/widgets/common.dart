@@ -72,9 +72,16 @@ class _AsyncViewState<T> extends State<AsyncView<T>> {
   }
 
   Future<void> reload() async {
-    setState(() => future = widget.load());
+    // Start the request outside setState. An assignment expression returns its
+    // value, so `() => future = widget.load()` accidentally returns a Future.
+    final reloadedFuture = widget.load();
+    if (mounted) {
+      setState(() {
+        future = reloadedFuture;
+      });
+    }
     try {
-      await future;
+      await reloadedFuture;
     } catch (_) {
       /* Displayed by FutureBuilder. */
     }

@@ -84,7 +84,12 @@ class _TimeGuardAppState extends State<TimeGuardApp> {
             body: Center(
               child: ErrorPanel(
                 snapshot.error!,
-                () => setState(() => startup = auth.restore()),
+                () {
+                  final restoredStartup = auth.restore();
+                  setState(() {
+                    startup = restoredStartup;
+                  });
+                },
               ),
             ),
           );

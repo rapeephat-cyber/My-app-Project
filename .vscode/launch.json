@@ -7,7 +7,7 @@
       "type": "dart",
       "program": "lib/main.dart",
       "toolArgs": [
-        "--dart-define=GOOGLE_WEB_CLIENT_ID=563227805774-fuujkq4d8ham9i1p448t32rd005ub1sd.apps.googleusercontent.com"
+        "--dart-define=GOOGLE_WEB_CLIENT_ID=764367490870-n17cmlp7q4mr42aco2ar1k81bpsuqfku.apps.googleusercontent.com"
       ]
     }
   ]
