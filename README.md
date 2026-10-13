@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TimeGuard — Approved Data Dictionary
 
 ## เว็บ Back Office (เพิ่ม 1 ตุลาคม 2026)
@@ -191,3 +192,6 @@ Integration tests ต้องใช้บัญชีสร้าง/ลบฐ�
 - ยังไม่ได้สร้าง APK ใหม่หลัง refactor นี้ APK ที่สร้างในรอบต้นแบบเดิมไม่ใช่รุ่น Google/Face/Polygon
 
 ข้อจำกัดที่ยังมี: หนึ่งคู่ต่อวันตาม Asia/Bangkok (ยังไม่มีกะข้ามเที่ยงคืน), ไม่มีปฏิทินคำนวณขาดงาน, ไม่มี push notification, ยังไม่ได้ทดสอบอุปกรณ์จริงหลังเปลี่ยน Google/กล้อง และไม่มี migration ข้อมูลเก่าแบบอัตโนมัติ
+=======
+# My-app-Project
+>>>>>>> 0dd91b176af989024ef9e1ca1bb33a1f7a32ed7b

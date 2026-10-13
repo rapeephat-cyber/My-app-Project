@@ -1,0 +1,24 @@
+ .vscode/launch.json                                |    4 [32m+[m[31m-[m
+ analysis_options.yaml                              |    9 [32m+[m
+ android/gradle.properties                          |    2 [32m+[m
+ backend/timeguard_admin/geofences/campus.php       |    4 [32m+[m[31m-[m
+ backend/timeguard_api/config/integrations.php      |    2 [32m+[m[31m-[m
+ .../location/get_department_areas.php              |    3 [32m+[m
+ lib/app.dart                                       |    7 [32m+[m[31m-[m
+ lib/config/api_config.dart                         |   17 [32m+[m[31m-[m
+ lib/config/oauth_config.dart                       |    2 [32m+[m[31m-[m
+ lib/screens/attendance_screen.dart                 | 2324 [32m+++++++++++++++++++[m[31m-[m
+ lib/screens/home_screen.dart                       |  554 [32m+++[m[31m--[m
+ lib/screens/outside_work_screen.dart               | 1173 [32m+++++++++[m[31m-[m
+ lib/services/attendance_service.dart               |   86 [32m+[m[31m-[m
+ lib/services/location_tracking_service.dart        |  562 [32m+++++[m
+ lib/widgets/common.dart                            |   11 [32m+[m[31m-[m
+ lib/widgets/work_area_map_card.dart                |  470 [32m++++[m
+ lib/widgets/work_area_map_dialog.dart              |  707 [32m++++++[m
+ pubspec.lock                                       |  108 [32m+[m[31m-[m
+ pubspec.yaml                                       |    2 [32m+[m
+ test/attendance_flow_test.dart                     |  344 [32m+++[m
+ test/data_contract_test.dart                       |    2 [32m+[m[31m-[m
+ test/location_tracking_test.dart                   |  189 [32m++[m
+ test/outside_work_test.dart                        |  162 [32m++[m
+ 23 files changed, 6360 insertions(+), 384 deletions(-)
